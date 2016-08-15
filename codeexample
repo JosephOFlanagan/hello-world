@@ -1,4 +1,4 @@
-import * packages;
+import * packages; //This is where you would import any class packages needed for the program, a generic term has been used here
 
 //Establishes the class name
 public class CodeExample
@@ -14,10 +14,13 @@ public class CodeExample
   //establishing the main method
   public static void main (string [] args)
   {
+    //Our objective is to get integer to equal 100, it starts at 0
     for (int i == 0; i < 200; ++i)
     {
-      integer = i;
+      //ensures integer does not equal itself
+      integer = integer + i;
       
+      //We want integer to equal 100 or more so we check here
       if (integer >= 100)
       {
         decide = true;
@@ -25,7 +28,8 @@ public class CodeExample
       }
       else
       {
-        integer = integer + random;
+        //Helps speed along the process of getting integer to at least 100
+        integer = integer + randomNumber;
       }
     }
   }
