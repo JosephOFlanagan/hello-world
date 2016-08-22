@@ -30,7 +30,7 @@ public class ManchesterUnited
   player[24](9, "Zlatan Ibrahimovic", "FW", 34)
   player[25](10, "Wayne Rooney", "FW", 30)
   player[26](7, "Memphis Depay", "FW", 22)
-	player[27](0, "James Wilson", "FW", 20)
+  player[27](0, "James Wilson", "FW", 20)
   player[28](11, "Anthony Martial", "FW", 20)
   player[29](19, "Marcus Rashford", "FW", 18)
 
