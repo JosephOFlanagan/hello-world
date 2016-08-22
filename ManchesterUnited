@@ -24,7 +24,7 @@ public class ManchesterUnited
   player[18](22, "Henrikh Mkhitaryan", "MF", 27)
   player[19](17, "Daley Blind", "MF",	26)
   player[20](14, "Jesse Lindgard", "MF", 23)
-  player[21](6,	"Paul Pogba", "MF",	23)
+  player[21](6,	"Paul Pogba", "MF", 23)
   player[22](44, "Andreas Pereira", "MF", 20)
   player[23](24, "Timothy Fosu-Mensah", "MF", 18)
   player[24](9, "Zlatan Ibrahimovic", "FW", 34)
