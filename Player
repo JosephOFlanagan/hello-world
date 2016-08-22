@@ -1,0 +1,16 @@
+public class Player
+{
+  int squadNumber = new int;
+  String() playerName = new String();
+  String() position = new String();
+  int age = new int;
+  
+
+  public Player(int i, String() s, String() p, int a)
+  {
+    squadNumber = i;
+    playerName = s;
+    position = p;
+    int = a;
+  }
+}
