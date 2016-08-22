@@ -4,7 +4,7 @@ public class ManchesterUnited
   
   
   player[0](20, "Sergi Romero", "GK", 29)
-  player[1](1, "David de Gea", "GK",	25)
+  player[1](1, "David de Gea", "GK", 25)
   player[2](12, "Chris Smalling", "DF", 26)
   player[3](5, "Marcos Rojo", "DF", 26)
   player[4](36, "Mateo Darmian", "DF", 26)
