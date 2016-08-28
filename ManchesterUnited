@@ -11,7 +11,6 @@ public class ManchesterUnited
   player[5](4, "Phil Jones", "DF", 24)
   player[6](3, "Eric Bailly", "DF", 22)
   player[7](23, "Luke Shaw", "DF", 21)
-  player[8](43, "Cameron Borthwick-Jackson", "DF", 19)
   player[9](16, "Michael Carrick", "MF", 35)
   player[10](31, "Bastian Schweinsteiger", "MF", 32)
   player[11](25, "Luis Antonio Valencia", "MF", 31)
