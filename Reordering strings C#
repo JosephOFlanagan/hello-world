@@ -1,0 +1,15 @@
+namespace Recording strings C#
+
+public class Program
+{
+     static string letterSorter(string sampleString)
+     {
+         sampleString = "DOGES";
+         char[] seperator = sampleString.ToArray();
+         Array.Sort(seperator);
+         return new string(seperator);
+     }
+}
+    
+    
+    
