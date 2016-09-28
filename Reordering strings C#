@@ -12,4 +12,8 @@ public class Program
 }
     
     
+    This is a work in progress. Ran the code and it came up with:
+    (14:10) } expected
+     (25:1) Type or namespace definition, or end-of-file expected
+    
     
