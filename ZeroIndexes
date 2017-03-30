@@ -5,34 +5,42 @@ class Solution
 {
     public int solution(int[] A) 
     {
+        //the following integers will determine how many pairs that are thrown up in the methodology in an attempt to find the unpaired values
         int paired = 0;
         int unpaired = 0;
-        // write your code in Java SE 8
+        // Nested for loops are used to compare values in the test case
         for (int i = 0; i < A.length; i++)
         {
             for (int j = 0; j < A.length; j++)
             {
+                //We need to check if the values match so as to check for pairs
                 if (A[i] == A[j])
                 {
+                    //However it isn't a pair if it's the same value, so a check on whether the i and j values are the same
                     if (i == j)
                     {
+                        //Therefore the paired integer remains the same
                         paired = paired;
                     }
                     else
                     {
+                        //We've found a pair so the paired integer has been increased by one.
                         paired = paired + 1;
                     }
                 }
             }
+            //After all that is the paired value still 0?
             if (paired == 0)
             {
                 unpaired = A[i];
             }
             else
             {
+                //We need to reset the paired value for the next value along, otherwise the program will set unpaired to the wrong value
                 paired = 0;
             }
         }
+        //By this point an unpaired value should have been found based on the structure of the Test Cases.
         return unpaired;
     }
     
