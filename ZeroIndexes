@@ -1,8 +1,5 @@
-// you can also use imports, for example:
-// import java.util.*;
-
-// you can write to stdout for debugging purposes, e.g.
-// System.out.println("this is a debug message");
+//This was undertaken as an exercise on a programming website
+//Written in Java
 
 class Solution 
 {
@@ -37,5 +34,10 @@ class Solution
             }
         }
         return unpaired;
+    }
+    
+    public static void main (string args[])
+    {
+        int[] TestCase = (9, 3, 9, 3, 9, 7, 9);
     }
 }
