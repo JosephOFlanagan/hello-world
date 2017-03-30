@@ -1,0 +1,30 @@
+//Written in Java for code practise purposes on Codility
+
+class Solution {
+    public int[] solution(int[] A, int K) 
+    {
+        //It is easier to rotate to the left than to the right, but rotating by one to the left means it will take the number of times equal to that of the array minus one, likewise the higher rotation to the left is the lower rotation to the right is
+        //i is used for the nested for loop and conver will reverse the direction of the rotation
+        int i, conver;
+        //K is subtracted from the length of A to reverse the direction of this code, so really it's rotating left but by the number of times needed to get the same result from rotating right
+        conver = A.length - K;
+        //Now here's where the rotation happens, done the number of times equal to that of the value that conver is now
+        for (i = 0; i < conver; i++)
+        {
+            //t is going to be used for each individual element of the array
+            int t, temp;
+            //first value of A is initially set as Temp, for use later on
+            temp = A[0];
+            //Last value is excluded to make this work
+            for (t = 0; t < A.length - 1; t++)
+            {
+                //Values are rotated here
+                A[t] = A[t + 1];
+            }
+            //This sets the last value to what the first one originally was
+            A[t] = temp;
+        }
+        //following rotation, the correct output can now be returned
+        return A;
+    }
+}
