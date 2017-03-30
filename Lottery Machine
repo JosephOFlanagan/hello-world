@@ -1,0 +1,200 @@
+//'main' method must be in a class 'Rextester'.
+//Compiler version 1.8.0_111
+
+import java.util.*;
+import java.lang.*;
+
+class Rextester
+{  
+    public void letterToNumberConverter(String Name)
+    {
+        String[] items = Name.split;
+        
+        int[] numericValue = new int[items.length];
+        
+        for (i = 0; i < items.length, i++)
+        {
+            if (items[i] == 'a')
+            {
+                numbericValue[i] = 1;
+            }
+            else if (items[i] == 'b')
+            {
+                numbericValue[i] = 2;
+            }
+            else if (items[i] == 'c')
+            {
+                numbericValue[i] = 3;
+            }
+            else if (items[i] == 'd')
+            {
+                numbericValue[i] = 4;
+            }
+            else if (items[i] == 'e')
+            {
+                numbericValue[i] = 5;
+            }
+            else if (items[i] == 'f')
+            {
+                numbericValue[i] = 6;
+            }
+            else if (items[i] == 'g')
+            {
+                numbericValue[i] = 7;
+            }
+            else if (items[i] == 'h')
+            {
+                numbericValue[i] = 8;
+            }
+            else if (items[i] == 'i')
+            {
+                numbericValue[i] = 9;
+            }
+            else if (items[i] == 'j')
+            {
+                numbericValue[i] = 10;
+            }
+            else if (items[i] == 'k')
+            {
+                numbericValue[i] = 11;
+            }
+            else if (items[i] == 'l')
+            {
+                numbericValue[i] = 12;
+            }
+            else if (items[i] == 'm')
+            {
+                numbericValue[i] = 13;
+            }
+            else if (items[i] == 'm')
+            {
+                numbericValue[i] = 13;
+            }
+            else if (items[i] == 'n')
+            {
+                numbericValue[i] = 14;
+            }
+            else if (items[i] == 'o')
+            {
+                numbericValue[i] = 15;
+            }
+            else if (items[i] == 'p')
+            {
+                numbericValue[i] = 16;
+            }
+            else if (items[i] == 'q')
+            {
+                numbericValue[i] = 17;
+            }
+            else if (items[i] == 'r')
+            {
+                numbericValue[i] = 18;
+            }
+            else if (items[i] == 's')
+            {
+                numbericValue[i] = 19;
+            }
+            else if (items[i] == 't')
+            {
+                numbericValue[i] = 20;
+            }
+            else if (items[i] == 'u')
+            {
+                numbericValue[i] = 21;
+            }
+            else if (items[i] == 'v')
+            {
+                numbericValue[i] = 22;
+            }
+            else if (items[i] == 'w')
+            {
+                numbericValue[i] = 23;
+            }
+            else if (items[i] == 'x')
+            {
+                numbericValue[i] = 24;
+            }
+            else if (items[i] == 'y')
+            {
+                numbericValue[i] = 25;
+            }
+            else if (items[i] == 'z')
+            {
+                numbericValue[i] = 26;
+            }
+            else
+            {
+                numbericValue[i] = 27;
+            }
+        }
+        return numericValue;
+    }
+        
+    public int[] lotteryResults(int[] numericValue)
+    {
+        int i;
+        int[]lottResults;
+        for (i = 0; i < 6; i++)
+        {
+            numericValue[i] = numericValue[i] * (numericValue.Length / 2);
+            if (numericValue[i] >= 54)
+            {
+                numericValue[i] = numericValue[i] - 53;
+            }
+            lottResults[i] = numericValue[i];
+            if (lottResults[i] >= 1)
+            {
+                for (j = 0; j < lottResults.length; j++)
+                {
+                    if (lottResults[i] == lottResults[j])
+                        {
+                            if (i == j)
+                            {
+                                lottResults[i] = lottResults[i];
+                            }
+                            else
+                            {
+                                lottResults[i] = lottResults[i] + 1;
+                            }
+                        }
+                }
+            }
+        }
+        return lottResults;
+    }
+    
+        
+    public int[] rotation(int[] A, int K) 
+    {
+        //It is easier to rotate to the left than to the right, but rotating by one to the left means it will take the number of times equal to that of the array minus one, likewise the higher rotation to the left is the lower rotation to the right is
+        //i is used for the nested for loop and conver will reverse the direction of the rotation
+        int i, conver;
+        //K is subtracted from the length of A to reverse the direction of this code, so really it's rotating left but by the number of times needed to get the same result from rotating right
+        conver = A.length - K;
+        //Now here's where the rotation happens, done the number of times equal to that of the value that conver is now
+        for (i = 0; i < conver; i++)
+        {
+            //t is going to be used for each individual element of the array
+            int t, temp;
+            //first value of A is initially set as Temp, for use later on
+            temp = A[0];
+            //Last value is excluded to make this work
+            for (t = 0; t < A.length - 1; t++)
+            {
+                //Values are rotated here
+                A[t] = A[t + 1];
+            }
+            //This sets the last value to what the first one originally was
+            A[t] = temp;
+        }
+        //following rotation, the correct output can now be returned
+        return A;
+    }
+    
+    public static void main(String args[])
+    {
+        String TestCase = "Joseph O'Flanagan";
+        int[] finalResult = lotteryResults(rotation(letterToNumberConverter(TestCase), TestCase.Length));
+        System.out.println(finalResult);
+    }
+}
